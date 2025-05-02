@@ -1,0 +1,37 @@
+.link-button {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.nav-simple {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-simple-reverse {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-double {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-flotating-bottom {
+    position: fixed;
+    bottom: 0.5em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+    animation: ease-in-out 0.5s;
+    opacity: 0.5;
+}
+
+.nav-flotating-bottom:hover {
+    opacity: 1;
+}

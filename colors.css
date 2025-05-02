@@ -1,0 +1,29 @@
+.color-base {
+    background-color: #115e91;
+    color: #fff;
+}
+
+.color-primary {
+    background-color: #48a3e0;
+    color: #333;
+}
+
+.color-secondary {
+    background-color: #0d7c5b;
+    color: #fff;
+}
+
+.color-success {
+    background-color: #4ae7b8;
+    color: #333
+}
+
+.color-primary-focus {
+    background-color: #0d537c;
+    color: #fff;
+}
+
+.color-secondary-focus {
+    background-color: #0b5a4c;
+    color: #fff;
+}
