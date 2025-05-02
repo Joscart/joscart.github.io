@@ -2,10 +2,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="home.css">
-    <link rel="stylesheet" type="text/css" href="colors.css">
-    <link rel="stylesheet" type="text/css" href="boxes.css">
-    <link rel="stylesheet" type="text/css" href="spacing.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/colors.css">
+    <link rel="stylesheet" type="text/css" href="css/boxes.css">
+    <link rel="stylesheet" type="text/css" href="css/spacing.css">
 </head>
 <body class="color-base">
     <header class="header-full color-primary no-spacing">

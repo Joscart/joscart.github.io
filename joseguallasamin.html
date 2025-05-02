@@ -4,44 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página Personal</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/colors.css">
+    <link rel="stylesheet" type="text/css" href="css/boxes.css">
+    <link rel="stylesheet" type="text/css" href="css/spacing.css">
 </head>
 <body>
-    <header>
-        <h1>Tu Nombre</h1>
-        <p>Tu profesión o una breve descripción</p>
+    <header class="header-full color-primary no-spacing">
+        <h1>Joscart - Jose Guallasamin</h1>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#about">Sobre Mí</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </nav>
-
-    <section id="about">
-        <h2>Sobre Mí</h2>
-        <p>Aquí puedes escribir una breve biografía o información personal.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Proyectos</h2>
-        <ul>
-            <li>Proyecto 1: Descripción breve</li>
-            <li>Proyecto 2: Descripción breve</li>
-            <li>Proyecto 3: Descripción breve</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Correo: tuemail@ejemplo.com</p>
-        <p>Teléfono: +123 456 7890</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Tu Nombre. Todos los derechos reservados.</p>
-    </footer>
+    <div class="nav-flotating-container no-spacing">
+        <nav class="nav-flotating-bottom color-secondary-focus medium-spacing round-box">
+            <a class="link-button" href="https://joscart.github.io">Inicio</a>
+            <a class="link-button" href="joseguallasamin.html">Sobre mi</a>
+        </nav>
+    </div>
+    <main class="content-box color-primary no-spacing">
+        <div class="main-content color-no low-spacing">
+        <section id="educacion">
+            <h2>Educación</h2>
+            <p>Graduado de la Unidad Educativa "Juan de Salinas" con Bachillerato tecnico en Mecatronica en el año 2022.</p>
+            <p>Cursando la Ingenieria en Ciencias de la Computacion la Universidad Politécnica Salesiana.</p>
+            <p>Nivel de Ingles B1 intermedio-alto</p>
+        </section>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Lenguajes</th>
+                        <th>Databases/OS</th>
+                        <th>Frameworks/Tools</th>
+                        <th>Adicionales</th>
+                        <th>Habilidades Blandas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML, CSS, JavaScript, C++, Java</td>
+                        <td>MySQL, PostgreSQL, Oracle, Linux, Windows</td>
+                        <td>QtCreator, Eclipse, Git, Visual Studio Code</td>
+                        <td>Placa de desarrollo Arduino, Reparacion y mantenimiento de equipos</td>
+                        <td>Paciencia, Actitud colaborativa, Liderazgo, Pensamiento logico</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="intereses">
+            <h2>Intereses</h2>
+            <p>Me apasiona la inteligencia artificial, el desarrollo de aplicaciones web y móviles, y la ciberseguridad.</p>
+        </section>
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <p>He trabajado en proyectos de desarrollo web y aplicaciones móviles, colaborando con equipos multidisciplinarios para crear soluciones innovadoras.</p>
+        </section>
+        <section id="referencias">
+            <h2>Referencias</h2>
+            <p>Referencias disponibles bajo solicitud.</p>
+        </section>
+        </div>
+        <div class="sidebar color-secondary low-spacing">
+            <div class="box color-secondary-focus">
+                <h2>Sobre mi</h2>
+                <p>Hola, soy Jose Guallasamin, un apasionado de la tecnología y el desarrollo web. Me encanta aprender cosas nuevas y compartir mis conocimientos con los demás.</p>
+            </div>
+            <div class="box color-secondary-focus">
+                <h2>Index</h2>
+                <ul>
+                    <li><a href="#educacion">Educacion</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#intereses">Intereses</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#referencias">Referencias</a></li>
+                </ul>
+            </div>
+            <div class="box color-secondary-focus">
+                <h2>Contacto</h2>
+                <p>Puedes contactarme a través de mis redes sociales o enviándome un correo electrónico.</p>
+                <ul>
+                    <li><a href="mailto:jguallasaminc@est.ups.edu.ec">Correo Institucional</a></li>
+                    <li><a href="mailto:joscartinicioegc@gmail.com">Correo Personal</a></li>
+                    <li><a href="https://www.linkedin.com/in/jose-guallasamin-6861aa278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/joscar_tinicio/">Instagram</a></li>
+                    <li><a href="https://wa.me/qr/P4APWVA6FKAQO1">Whatsapp</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

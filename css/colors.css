@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .color-base {
     background-color: #1e3a5f; /* Deep Blue */
     color: #f5f5f5; /* Cream White */
@@ -30,4 +32,23 @@
 .color-secondary-focus {
     background-color: #e8d8b9; /* Darker Cream */
     color: #1e3a5f; /* Deep Blue */
+}
+
+.reference-item {
+    background-color: rgba(58, 110, 165, 0.1); /* Soft Blue with transparency */
+    border-color: #3a6ea5; /* Soft Blue */
+}
+
+.reference-item h3 {
+    color: #3a6ea5; /* Soft Blue */
+}
+
+.reference-link {
+    color: #3a6ea5; /* Soft Blue */
+    border-color: #3a6ea5; /* Soft Blue */
+}
+
+.reference-link:hover {
+    background-color: #3a6ea5; /* Soft Blue */
+    color: #fdfdfd; /* Light Cream */
 }
