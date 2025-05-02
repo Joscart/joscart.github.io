@@ -157,3 +157,10 @@ th, td {
     border-radius: 0.5rem;
     transition: background-color 0.3s ease; 
 }
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
