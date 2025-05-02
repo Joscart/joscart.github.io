@@ -4,6 +4,10 @@
   border-radius: 5px;
 }
 
+.round-box {
+    border-radius: 5px;
+}
+
 .nav-simple {
     display: flex;
     justify-content: flex-start;
@@ -23,15 +27,51 @@
 }
 
 .nav-flotating-bottom {
-    position: fixed;
-    bottom: 0.5em;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: flex-end;
     animation: ease-in-out 0.5s;
     opacity: 0.5;
+    gap: 1em;
 }
 
 .nav-flotating-bottom:hover {
     opacity: 1;
+}
+
+.nav-flotating-container {
+    position: fixed;
+    bottom: 0.5em;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.header-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    flex-direction: column;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.galeria-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin: 1em;
 }
