@@ -52,3 +52,8 @@
     background-color: #3a6ea5; /* Soft Blue */
     color: #fdfdfd; /* Light Cream */
 }
+
+th, td {
+    border-color: #fdfdfd; /* Light Cream */
+
+}
