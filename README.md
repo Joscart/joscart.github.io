@@ -1,9 +1,7 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joscart webpage</title>
     <link rel="stylesheet" type="text/css" href="home.css">
     <link rel="stylesheet" type="text/css" href="colors.css">
     <link rel="stylesheet" type="text/css" href="boxes.css">
@@ -14,10 +12,9 @@
         <h1>Joscart - Jose Guallasamin</h1>
     </header>
     <div class="nav-flotating-container no-spacing">
-        <nav class="nav-flotating-bottom color-secondary medium-spacing round-box">
-            <a class="link-button color-secondary" href="README.md">Inicio</a>
-            <a class="link-button color-secondary" href="joseguallasamin.html">Sobre mi</a>
-            <a class="link-button color-secondary" href="proyectos.html">Proyectos</a>
+        <nav class="nav-flotating-bottom color-secondary-focus medium-spacing round-box">
+            <a class="link-button" href="https://joscart.github.io">Inicio</a>
+            <a class="link-button" href="joseguallasamin.html">Sobre mi</a>
         </nav>
     </div>
     <main class="container">
@@ -41,5 +38,6 @@
                 </div>
             </div>
         </section>
+    </main>
 </body>
 </html>
