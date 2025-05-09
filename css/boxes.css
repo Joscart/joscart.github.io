@@ -163,7 +163,7 @@ th, td {
 }
 
 .project-article:hover {
-    transform: scale(1.05); /* Slightly increase size on hover */
+    transform: scale(1.05);
 }
 
 .profile-image {
