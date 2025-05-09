@@ -1,11 +1,59 @@
 body {
     font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     background-color: #f0f0f0;
     margin: 0;
+}
+
+#game-wrapper {
+    display: flex; /* Use flexbox for main-content and sidebar layout */
+    max-width: 1200px; /* Or your preferred max width */
+    margin: 20px auto; /* Center the wrapper */
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#main-content {
+    flex-grow: 1; /* Main content takes available space */
+    padding-right: 15px; /* Space between main and sidebar */
+}
+
+#main-content h1 {
+    text-align: center;
+}
+
+#sidebar {
+    width: 300px; /* Fixed width for the sidebar */
+    flex-shrink: 0; /* Prevent sidebar from shrinking */
+    display: flex;
+    flex-direction: column; /* Stack top and bottom containers vertically */
+    border-left: 1px solid #ccc;
+    padding-left: 15px;
+}
+
+#sidebar-top-container {
+    flex-basis: 50%; /* Attempt to give top half */
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #eee;
+    margin-bottom: 10px;
+    overflow-y: auto; /* In case question content is long */
+    min-height: 150px; /* Ensure it has some height even if question modal is hidden initially */
+}
+
+#sidebar-bottom-container {
+    flex-basis: 50%; /* Attempt to give bottom half */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center dice button and text */
+    justify-content: center; /* Center vertically within its space */
+}
+
+#sidebar h2 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 #game-container {
@@ -16,45 +64,82 @@ body {
     text-align: center;
 }
 
-#board-container {
-    display: grid;
-    grid-template-columns: repeat(10, 50px); /* Example: 10xN board */
-    grid-template-rows: repeat(7, 50px);    /* Example: 63 squares + start/end */
-    gap: 2px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    width: 500px; /* Adjust as needed */
-    height: 350px; /* Adjust as needed */
-    margin-left: auto;
-    margin-right: auto;
+/* Styles for the new table-based board */
+.game-board {
+    border-collapse: collapse;
+    margin: 20px auto; /* Center the board */
 }
 
 .square {
-    width: 50px;
-    height: 50px;
-    border: 1px solid #ddd;
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
+    border: 1px solid #333;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px; /* Adjust as needed */
+    position: relative; /* For player marker positioning */
+    box-sizing: border-box;
+}
+
+.square-empty {
+    background-color: #f0f0f0; /* Visually distinct empty cells */
+    border: 1px dashed #ccc;
+}
+
+/* Player Marker Style */
+.player-marker::after {
+    content: '♟'; /* Player piece icon */
+    font-size: 30px; /* Adjust icon size */
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure marker is above square number */
+}
+
+/* Specific Square Styles */
+.square-normal {
+    background-color: #ffffff;
+}
+.square-start {
+    background-color: #c8e6c9; /* Light green */
+    font-weight: bold;
+}
+.square-fin {
+    background-color: #ffcc80; /* Light orange */
+    font-weight: bold;
+}
+.square-oca {
+    background-color: #90caf9; /* Light blue */
+}
+.square-oca.square-fin { /* Oca that is also the finish line */
+    background-color: #64b5f6; /* Darker blue for emphasis */
+}
+.square-puente {
+    background-color: #ffe082; /* Light yellow */
+}
+.square-calavera {
+    background-color: #ef9a9a; /* Light red */
+    color: white;
+    font-weight: bold;
+}
+
+#board-container {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 10px;
-    position: relative;
 }
 
-.square.player-marker::after {
-    content: 'P';
-    position: absolute;
-    color: red;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-#player-info, #question-management {
+#player-info {
     margin-top: 20px;
+    text-align: center; /* Center player position text */
 }
 
 #question-modal {
-    margin-top: 15px;
-    padding: 15px;
+    padding: 10px; /* Adjusted padding */
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
