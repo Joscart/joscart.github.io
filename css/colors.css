@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 .color-base {
-    background-color: #1e3a5f; /* Deep Blue */
-    color: #f5f5f5; /* Cream White */
+    background-color: #fdf6e3; /* Pastel Yellow (Solarized Base03) */
+    color: #657b83; /* Pastel Blue-Gray (Solarized Base0) */
 }
 
 .color-no {
@@ -10,50 +10,49 @@
 }
 
 .color-primary {
-    background-color: #3a6ea5; /* Soft Blue */
-    color: #fdfdfd; /* Light Cream */
+    background-color: #eee8d5; /* Lighter Pastel Yellow (Solarized Base02) */
+    color: #586e75; /* Darker Pastel Blue-Gray (Solarized Base01) */
 }
 
 .color-secondary {
-    background-color: #f5e8c7; /* Cream */
-    color: #1e3a5f; /* Deep Blue */
+    background-color: #d3cce3; /* Pastel Lavender */
+    color: #586e75; /* Darker Pastel Blue-Gray (Solarized Base01) */
 }
 
 .color-success {
-    background-color: #a3c9e2; /* Light Blue */
-    color: #1e3a5f; /* Deep Blue */
+    background-color: #c9e4d4; /* Pastel Mint */
+    color: #586e75; /* Darker Pastel Blue-Gray (Solarized Base01) */
 }
 
 .color-primary-focus {
-    background-color: #2c5d87; /* Darker Soft Blue */
-    color: #fdfdfd; /* Light Cream */
+    background-color: #b2d8d8; /* Pastel Cyan */
+    color: #073642; /* Darkest Pastel Blue-Gray (Solarized Base03) */
 }
 
 .color-secondary-focus {
-    background-color: #e8d8b9; /* Darker Cream */
-    color: #1e3a5f; /* Deep Blue */
+    background-color: #f5dcdc; /* Pastel Pink */
+    color: #073642; /* Darkest Pastel Blue-Gray (Solarized Base03) */
 }
 
 .reference-item {
-    background-color: rgba(58, 110, 165, 0.1); /* Soft Blue with transparency */
-    border-color: #3a6ea5; /* Soft Blue */
+    background-color: rgba(178, 216, 216, 0.1); /* Pastel Cyan with transparency */
+    border-color: #b2d8d8; /* Pastel Cyan */
 }
 
 .reference-item h3 {
-    color: #3a6ea5; /* Soft Blue */
+    color: #859900; /* Pastel Green (Solarized Green) */
 }
 
 .reference-link {
-    color: #3a6ea5; /* Soft Blue */
-    border-color: #3a6ea5; /* Soft Blue */
+    color: #2aa198; /* Pastel Teal (Solarized Cyan) */
+    border-color: #2aa198; /* Pastel Teal (Solarized Cyan) */
 }
 
 .reference-link:hover {
-    background-color: #3a6ea5; /* Soft Blue */
-    color: #fdfdfd; /* Light Cream */
+    background-color: #2aa198; /* Pastel Teal (Solarized Cyan) */
+    color: #fdf6e3; /* Pastel Yellow (Solarized Base03) */
 }
 
 th, td {
-    border-color: #fdfdfd; /* Light Cream */
-
+    border-color: #93a1a1; /* Lighter Pastel Gray (Solarized Base1) */
 }

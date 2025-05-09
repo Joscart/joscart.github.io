@@ -15,6 +15,7 @@
         <nav class="nav-flotating-bottom color-secondary-focus medium-spacing round-box">
             <a class="link-button" href="https://joscart.github.io">Inicio</a>
             <a class="link-button" href="joseguallasamin.html">Sobre mi</a>
+            <a class="link-button" href="proyectos.html">Proyectos</a>
         </nav>
     </div>
     <main class="container">

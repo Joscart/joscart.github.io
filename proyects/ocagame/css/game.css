@@ -1,0 +1,130 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+#game-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#board-container {
+    display: grid;
+    grid-template-columns: repeat(10, 50px); /* Example: 10xN board */
+    grid-template-rows: repeat(7, 50px);    /* Example: 63 squares + start/end */
+    gap: 2px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    width: 500px; /* Adjust as needed */
+    height: 350px; /* Adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    position: relative;
+}
+
+.square.player-marker::after {
+    content: 'P';
+    position: absolute;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#player-info, #question-management {
+    margin-top: 20px;
+}
+
+#question-modal {
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#question-modal h3 {
+    margin-top: 0;
+}
+
+#options-container button {
+    display: block;
+    margin: 5px auto;
+    padding: 8px 15px;
+}
+
+#manual-question-input, #csv-question-upload {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px dashed #ddd;
+}
+
+#settings-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000; /* Ensure it's on top */
+}
+
+#settings-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 999; /* Below settings button but above other content */
+    border: 1px solid #ccc;
+}
+
+#close-settings-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    padding: 2px 8px;
+    cursor: pointer;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+input[type="text"] {
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 200px;
+}
