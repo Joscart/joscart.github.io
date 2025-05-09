@@ -158,6 +158,14 @@ th, td {
     transition: background-color 0.3s ease; 
 }
 
+.project-article {
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-article:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
 .profile-image {
     width: 100px;
     height: 100px;
