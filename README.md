@@ -258,7 +258,7 @@ Si este template te fue útil:
 
 **Jose Guallasamin (Joscart)**
 - 🌐 Portfolio: [joscart.github.io](https://joscart.github.io)
-- 💼 LinkedIn: [Tu LinkedIn]
+- 💼 LinkedIn: [Jose Guallasamin](https://www.linkedin.com/in/jose-guallasamin-6861aa278/)
 - 📧 Email: [jguallasamin@ieee.org] [joscartinicioegc@gmail.com]
 - 🐱 GitHub: [@Joscart](https://github.com/Joscart)
 
