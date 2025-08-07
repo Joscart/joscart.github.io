@@ -1,0 +1,215 @@
+body {
+    font-family: sans-serif;
+    max-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+#game-wrapper {
+    display: flex; /* Use flexbox for main-content and sidebar layout */
+    max-width: 1200px; /* Or your preferred max width */
+    margin: 20px auto; /* Center the wrapper */
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#main-content {
+    flex-grow: 1; /* Main content takes available space */
+    padding-right: 15px; /* Space between main and sidebar */
+}
+
+#main-content h1 {
+    text-align: center;
+}
+
+#sidebar {
+    width: 300px; /* Fixed width for the sidebar */
+    flex-shrink: 0; /* Prevent sidebar from shrinking */
+    display: flex;
+    flex-direction: column; /* Stack top and bottom containers vertically */
+    border-left: 1px solid #ccc;
+    padding-left: 15px;
+}
+
+#sidebar-top-container {
+    flex-basis: 50%; /* Attempt to give top half */
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #eee;
+    margin-bottom: 10px;
+    overflow-y: auto; /* In case question content is long */
+    min-height: 150px; /* Ensure it has some height even if question modal is hidden initially */
+}
+
+#sidebar-bottom-container {
+    flex-basis: 50%; /* Attempt to give bottom half */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center dice button and text */
+    justify-content: center; /* Center vertically within its space */
+}
+
+#sidebar h2 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#game-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styles for the new table-based board */
+.game-board {
+    border-collapse: collapse;
+    margin: 20px auto; /* Center the board */
+}
+
+.square {
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
+    border: 1px solid #333;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px; /* Adjust as needed */
+    position: relative; /* For player marker positioning */
+    box-sizing: border-box;
+}
+
+.square-empty {
+    background-color: #f0f0f0; /* Visually distinct empty cells */
+    border: 1px dashed #ccc;
+}
+
+/* Player Marker Style */
+.player-marker::after {
+    content: '♟'; /* Player piece icon */
+    font-size: 30px; /* Adjust icon size */
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure marker is above square number */
+}
+
+/* Specific Square Styles */
+.square-normal {
+    background-color: #ffffff;
+}
+.square-start {
+    background-color: #c8e6c9; /* Light green */
+    font-weight: bold;
+}
+.square-fin {
+    background-color: #ffcc80; /* Light orange */
+    font-weight: bold;
+}
+.square-oca {
+    background-color: #90caf9; /* Light blue */
+}
+.square-oca.square-fin { /* Oca that is also the finish line */
+    background-color: #64b5f6; /* Darker blue for emphasis */
+}
+.square-puente {
+    background-color: #ffe082; /* Light yellow */
+}
+.square-calavera {
+    background-color: #ef9a9a; /* Light red */
+    color: white;
+    font-weight: bold;
+}
+
+#board-container {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#player-info {
+    margin-top: 20px;
+    text-align: center; /* Center player position text */
+}
+
+#question-modal {
+    padding: 10px; /* Adjusted padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#question-modal h3 {
+    margin-top: 0;
+}
+
+#options-container button {
+    display: block;
+    margin: 5px auto;
+    padding: 8px 15px;
+}
+
+#manual-question-input, #csv-question-upload {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px dashed #ddd;
+}
+
+#settings-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000; /* Ensure it's on top */
+}
+
+#settings-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 999; /* Below settings button but above other content */
+    border: 1px solid #ccc;
+}
+
+#close-settings-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    padding: 2px 8px;
+    cursor: pointer;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+input[type="text"] {
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 200px;
+}

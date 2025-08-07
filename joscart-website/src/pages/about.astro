@@ -1,0 +1,162 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Section from '../components/Section.astro';
+import Card from '../components/Card.astro';
+import Skills from '../components/Skills.astro';
+---
+
+<Layout 
+  title="Sobre mí - Joscart" 
+  description="Conoce más sobre Jose Guallasamin, desarrollador Junior y estudiante de Ingeniería en Ciencias de la Computación."
+>
+  <Header />
+  
+  <main class="min-h-screen bg-gradient-to-br from-secondary-950 via-primary-950 to-secondary-900 pb-24">
+    <!-- Education Section -->
+    <Section title="Educación">
+      <div class="max-w-4xl mx-auto">
+        <Card variant="primary">
+          <div class="space-y-6">
+            <div class="flex items-start space-x-4">
+              <div class="w-4 h-4 bg-accent-500 rounded-full mt-2 flex-shrink-0"></div>
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-2">
+                  Ingeniería en Ciencias de la Computación
+                </h3>
+                <p class="text-secondary-300 mb-1">Universidad Politécnica Salesiana</p>
+                <p class="text-secondary-400 text-sm mb-3">En curso</p>
+                <p class="text-secondary-200">
+                  Cursando la carrera con enfoque en desarrollo de software, bases de datos y programación avanzada.
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-4 h-4 bg-primary-500 rounded-full mt-2 flex-shrink-0"></div>
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-2">
+                  Bachillerato Técnico en Mecatrónica
+                </h3>
+                <p class="text-secondary-300 mb-1">Unidad Educativa "Juan de Salinas"</p>
+                <p class="text-secondary-400 text-sm mb-3">Graduado en 2022</p>
+                <p class="text-secondary-200">
+                  Formación técnica que me proporcionó bases sólidas en tecnología y resolución de problemas.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4">
+              <div class="w-4 h-4 bg-accent-400 rounded-full mt-2 flex-shrink-0"></div>
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-2">
+                  Nivel de Inglés B1
+                </h3>
+                <p class="text-secondary-300 mb-1">Intermedio-Alto</p>
+                <p class="text-secondary-200">
+                  Capacidad para comunicación técnica y comprensión de documentación en inglés.
+                </p>
+              </div>
+            </div>
+          </div>
+        </Card>
+      </div>
+    </Section>
+
+    <!-- Skills Section -->
+    <Section title="Habilidades Técnicas">
+      <Skills />
+    </Section>
+
+    <!-- Experience Section -->
+    <Section title="Experiencia">
+      <div class="max-w-4xl mx-auto">
+        <Card title="Vicepresidente CS IEEE UPS Quito" variant="accent">
+          <div class="space-y-4">
+            <p class="text-secondary-300 font-medium">
+              Rama estudiantil Computer Science - Universidad Politécnica Salesiana
+            </p>
+            <p class="text-secondary-200 leading-relaxed">
+              Como vicepresidente de la rama estudiantil Computer Science dentro de la Universidad Politécnica Salesiana Campus Sur, he colaborado en la realización de varios proyectos en conjunto con mis compañeros, desarrollando habilidades de liderazgo y trabajo en equipo.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="bg-accent-800/50 text-accent-200 px-3 py-1 rounded-full text-sm">
+                Liderazgo
+              </span>
+              <span class="bg-accent-800/50 text-accent-200 px-3 py-1 rounded-full text-sm">
+                Gestión de proyectos
+              </span>
+              <span class="bg-accent-800/50 text-accent-200 px-3 py-1 rounded-full text-sm">
+                Trabajo en equipo
+              </span>
+              <span class="bg-accent-800/50 text-accent-200 px-3 py-1 rounded-full text-sm">
+                Organización de eventos
+              </span>
+            </div>
+          </div>
+        </Card>
+      </div>
+    </Section>
+
+    <!-- Personal Values Section -->
+    <Section title="Valores y Filosofía">
+      <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <Card title="Aprendizaje Continuo" variant="primary">
+          <p class="text-secondary-200">
+            Soy un eterno estudiante en busca de la sabiduría. Creo firmemente en el poder del aprendizaje continuo y la mejora constante.
+          </p>
+        </Card>
+        
+        <Card title="Actitud Positiva" variant="secondary">
+          <p class="text-secondary-200">
+            Siempre con buena actitud ante cualquier problema. Los desafíos son oportunidades para crecer y aprender.
+          </p>
+        </Card>
+        
+        <Card title="Colaboración" variant="accent">
+          <p class="text-secondary-200">
+            Me gusta compartir mis experiencias y aprender de los demás. El conocimiento se multiplica cuando se comparte.
+          </p>
+        </Card>
+        
+        <Card title="Compromiso Social" variant="primary">
+          <p class="text-secondary-200">
+            Fiel al voluntariado y a la búsqueda del bien común. Creo en usar la tecnología para generar un impacto positivo.
+          </p>
+        </Card>
+      </div>
+    </Section>
+
+    <!-- Goals Section -->
+    <section class="py-16 bg-primary-900/30">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-8 text-center">
+          Objetivos Profesionales
+        </h2>
+        <div class="max-w-4xl mx-auto">
+          <Card variant="secondary">
+            <div class="space-y-4">
+              <p class="text-lg text-secondary-200 leading-relaxed">
+                Mi objetivo es convertirme en un desarrollador Full Stack competente, capaz de crear soluciones tecnológicas que realmente impacten de manera positiva en la vida de las personas.
+              </p>
+              <p class="text-lg text-secondary-200 leading-relaxed">
+                Busco constantemente nuevas oportunidades para aplicar mis conocimientos, colaborar en proyectos desafiantes y contribuir al crecimiento de equipos de desarrollo de alta calidad.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-6">
+                <span class="bg-primary-700/50 text-primary-200 px-4 py-2 rounded-lg font-medium">
+                  Desarrollo Full Stack
+                </span>
+                <span class="bg-primary-700/50 text-primary-200 px-4 py-2 rounded-lg font-medium">
+                  Arquitectura de Software
+                </span>
+                <span class="bg-primary-700/50 text-primary-200 px-4 py-2 rounded-lg font-medium">
+                  Metodologías Ágiles
+                </span>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de la Oca</title>
+    <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+    <button id="settings-button">&#9881;</button>
+
+    <div id="game-wrapper"> <!-- New wrapper for overall layout -->
+        <div id="main-content">
+            <h1>Juego de la Oca</h1>
+            <div id="board-container">
+                <!-- Game board (table) will be generated here by JavaScript -->
+            </div>
+            <div id="player-info">
+                <p>Player Position: <span id="player-position">0</span></p>
+                <!-- Dice roll button and result will be moved to sidebar -->
+            </div>
+        </div>
+
+        <div id="sidebar">
+            <div id="sidebar-top-container"> <!-- Container for questions -->
+                <h2>Pregunta Actual</h2>
+                <div id="question-modal" style="display:none;">
+                    <h3 id="question-text"></h3>
+                    <div id="options-container">
+                        <!-- Options will be populated here -->
+                    </div>
+                    <button id="submit-answer-button">Submit Answer</button>
+                </div>
+            </div>
+            <div id="sidebar-bottom-container"> <!-- Container for dice -->
+                <h2>Dado</h2>
+                <button id="roll-dice-button">Roll Dice</button>
+                <p>Dice: <span id="dice-result">-</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="settings-panel" style="display:none;">
+        <button id="close-settings-button">X</button>
+        <div id="question-management">
+            <h2>Manage Questions</h2>
+            <div id="manual-question-input">
+                <h3>Add Question Manually</h3>
+                <label for="new-question">Question:</label>
+                <input type="text" id="new-question" name="new-question"><br>
+                <label for="option1">Option 1 (Correct):</label>
+                <input type="text" id="option1" name="option1"><br>
+                <label for="option2">Option 2:</label>
+                <input type="text" id="option2" name="option2"><br>
+                <label for="option3">Option 3 (Optional):</label>
+                <input type="text" id="option3" name="option3"><br>
+                <label for="option4">Option 4 (Optional):</label>
+                <input type="text" id="option4" name="option4"><br>
+                <button id="add-question-button">Add Question</button>
+            </div>
+            <div id="csv-question-upload">
+                <h3>Upload Questions via CSV</h3>
+                <input type="file" id="csv-file-input" accept=".csv">
+                <button id="upload-csv-button">Upload CSV</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>

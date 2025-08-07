@@ -1,0 +1,37 @@
+---
+// Header component with navigation
+---
+
+<header class="bg-primary-900 shadow-lg sticky top-0 z-50">
+  <div class="container mx-auto px-4 py-6">
+    <h1 class="text-3xl md:text-4xl font-heading font-bold text-white text-center">
+      Joscart - Jose Guallasamin
+    </h1>
+  </div>
+</header>
+
+<!-- Floating Navigation -->
+<div class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-40">
+  <nav class="bg-primary-800/95 backdrop-blur-sm rounded-full px-6 py-3 shadow-xl border border-primary-700">
+    <div class="flex space-x-6">
+      <a 
+        href="/" 
+        class="text-secondary-200 hover:text-white transition-colors duration-200 font-medium"
+      >
+        Inicio
+      </a>
+      <a 
+        href="/about" 
+        class="text-secondary-200 hover:text-white transition-colors duration-200 font-medium"
+      >
+        Sobre mí
+      </a>
+      <a 
+        href="/projects" 
+        class="text-secondary-200 hover:text-white transition-colors duration-200 font-medium"
+      >
+        Proyectos
+      </a>
+    </div>
+  </nav>
+</div>

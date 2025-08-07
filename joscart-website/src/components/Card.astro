@@ -1,0 +1,30 @@
+---
+export interface Props {
+  title?: string;
+  variant?: 'primary' | 'secondary' | 'accent';
+  className?: string;
+}
+
+const { 
+  title, 
+  variant = 'primary',
+  className = ''
+} = Astro.props;
+
+const variants = {
+  primary: 'bg-primary-800/50 border-primary-700',
+  secondary: 'bg-secondary-800/50 border-secondary-700', 
+  accent: 'bg-accent-900/30 border-accent-700'
+};
+---
+
+<article class={`rounded-xl border backdrop-blur-sm p-6 ${variants[variant]} ${className}`}>
+  {title && (
+    <h3 class="text-xl font-heading font-semibold text-white mb-4">
+      {title}
+    </h3>
+  )}
+  <div class="text-secondary-200">
+    <slot />
+  </div>
+</article>

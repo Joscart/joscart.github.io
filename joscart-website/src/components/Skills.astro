@@ -1,0 +1,64 @@
+---
+// Skills component with professional styling
+const skills = {
+  languages: ['HTML', 'CSS', 'JavaScript', 'C++', 'Java', 'SQL'],
+  databases: ['MySQL', 'PostgreSQL', 'Oracle'],
+  tools: ['Git', 'Visual Studio Code', 'QtCreator', 'Eclipse'],
+  systems: ['Linux', 'Windows'],
+  soft: ['Trabajo en equipo', 'Liderazgo', 'Comunicación', 'Resolución de problemas']
+};
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+  <div class="bg-primary-800/30 rounded-lg p-6 border border-primary-700">
+    <h3 class="text-lg font-heading font-semibold text-accent-400 mb-4">
+      Lenguajes
+    </h3>
+    <div class="space-y-2">
+      {skills.languages.map(skill => (
+        <span class="inline-block bg-primary-700/50 text-secondary-200 px-3 py-1 rounded-full text-sm mr-2 mb-2">
+          {skill}
+        </span>
+      ))}
+    </div>
+  </div>
+
+  <div class="bg-secondary-800/30 rounded-lg p-6 border border-secondary-700">
+    <h3 class="text-lg font-heading font-semibold text-accent-400 mb-4">
+      Bases de Datos
+    </h3>
+    <div class="space-y-2">
+      {skills.databases.map(skill => (
+        <span class="inline-block bg-secondary-700/50 text-secondary-200 px-3 py-1 rounded-full text-sm mr-2 mb-2">
+          {skill}
+        </span>
+      ))}
+    </div>
+  </div>
+
+  <div class="bg-accent-900/20 rounded-lg p-6 border border-accent-700">
+    <h3 class="text-lg font-heading font-semibold text-accent-400 mb-4">
+      Herramientas
+    </h3>
+    <div class="space-y-2">
+      {skills.tools.map(skill => (
+        <span class="inline-block bg-accent-800/40 text-secondary-200 px-3 py-1 rounded-full text-sm mr-2 mb-2">
+          {skill}
+        </span>
+      ))}
+    </div>
+  </div>
+
+  <div class="bg-primary-800/30 rounded-lg p-6 border border-primary-700">
+    <h3 class="text-lg font-heading font-semibold text-accent-400 mb-4">
+      Habilidades Blandas
+    </h3>
+    <div class="space-y-2">
+      {skills.soft.map(skill => (
+        <span class="inline-block bg-primary-700/50 text-secondary-200 px-3 py-1 rounded-full text-sm mr-2 mb-2">
+          {skill}
+        </span>
+      ))}
+    </div>
+  </div>
+</div>
